@@ -32,7 +32,7 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    "notebooks/trials.ipynb"
+    "notebooks/Text_summarizer.ipynb"
 ]
 
 
