@@ -1,4 +1,5 @@
 from Summarizer.pipeline.data_injestion_1 import DataIngestionTrainingPipeline
+from Summarizer.pipeline.data_validation_2 import DataValidationTrainingPipeline
 from Summarizer.logging import logger
 
 
@@ -7,6 +8,17 @@ try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
    data_ingestion = DataIngestionTrainingPipeline()
    data_ingestion.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+STAGE_NAME = "Data Validation stage"
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_validation = DataValidationTrainingPipeline()
+   data_validation.main()
    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
 except Exception as e:
         logger.exception(e)

@@ -6,3 +6,8 @@ data_ingestion:
   source_URL: https://github.com/RAAHUL-tech/Text-Summarizer/raw/main/dataset/summarizer-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]
