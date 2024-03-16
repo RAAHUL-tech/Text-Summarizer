@@ -1,5 +1,5 @@
 from Summarizer.config.configuration import ConfigurationManager
-from Summarizer.conponents.data_ingestion import DataIngestion
+from Summarizer.components.data_ingestion import DataIngestion
 from Summarizer.logging import logger
 
 

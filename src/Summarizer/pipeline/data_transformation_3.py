@@ -1,5 +1,5 @@
 from Summarizer.config.configuration import ConfigurationManager
-from Summarizer.conponents.data_transformation import DataTransformation
+from Summarizer.components.data_transformation import DataTransformation
 from Summarizer.logging import logger
 
 

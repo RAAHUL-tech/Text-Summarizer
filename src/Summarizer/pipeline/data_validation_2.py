@@ -1,5 +1,5 @@
 from Summarizer.config.configuration import ConfigurationManager
-from Summarizer.conponents.data_validation import DataValiadtion
+from Summarizer.components.data_validation import DataValiadtion
 from Summarizer.logging import logger
 
 
